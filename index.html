@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indus Spices - Premium Indian Spices Exporter | ISO Certified</title>
+    <meta name="description" content="Leading exporter of premium Indian spices. ISO 9001:2015, HACCP certified. Supplying turmeric, red chilli, black pepper, and exotic spices globally.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fef7ee',
+                            100: '#fdecd3',
+                            500: '#d97706',
+                            600: '#b45309',
+                            700: '#92400e',
+                            900: '#78350f'
+                        },
+                        forest: {
+                            600: '#065f46',
+                            700: '#064e3b',
+                            800: '#134e4a',
+                            900: '#0f3730'
+                        },
+                        stone: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            300: '#d6d3d1',
+                            800: '#292524',
+                            900: '#1c1917'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Crimson Pro', 'serif'],
+                        sans: ['Work Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        
+        .animate-slide-in-left {
+            animation: slideInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        
+        .animate-slide-in-right {
+            animation: slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        
+        .animate-scale-in {
+            animation: scaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%);
+        }
+        
+        .stat-counter {
+            background: linear-gradient(135deg, #065f46 0%, #134e4a 100%);
+        }
+        
+        .product-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-card img {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .product-card:hover img {
+            transform: scale(1.1);
+        }
+        
+        .certification-badge {
+            transition: all 0.3s ease;
+        }
+        
+        .certification-badge:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #d97706;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .section-title-line::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 60%;
+            background: linear-gradient(180deg, #d97706 0%, #b45309 100%);
+        }
+        
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="font-sans text-stone-900 bg-white">
+
+    <!-- TOP BAR -->
+    <div class="bg-forest-900 text-white py-2 text-sm">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                    </svg>
+                    <span>export@indusspices.com</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                    </svg>
+                    <span>+91 98765 43210</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-primary-100">🏆 ISO 9001:2015 | HACCP | FSSAI Certified</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="bg-white sticky top-0 z-50 border-b border-stone-200 shadow-sm">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-12 h-12 flex items-center justify-center">
+                        <img
+                            src="/img/logo/logo-icon.png" 
+                            alt="Indus Spices Logo" 
+                            class="w-10 h-10 object-contain">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-stone-900 tracking-tight">ROYAL EVERGREEN TRADERS</h1>
+                        <p class="text-xs text-stone-600 -mt-1">Premium Export Quality</p>
+                    </div>
+                </div>
+                
+                <ul class="hidden lg:flex items-center gap-8 font-medium text-sm">
+                    <li><a href="#home" class="nav-link text-stone-700 hover:text-primary-600">Home</a></li>
+                    <li><a href="#about" class="nav-link text-stone-700 hover:text-primary-600">About Us</a></li>
+                    <li><a href="#products" class="nav-link text-stone-700 hover:text-primary-600">Products</a></li>
+                    <li><a href="#quality" class="nav-link text-stone-700 hover:text-primary-600">Quality</a></li>
+                    <li><a href="#infrastructure" class="nav-link text-stone-700 hover:text-primary-600">Infrastructure</a></li>
+                    <li><a href="#export" class="nav-link text-stone-700 hover:text-primary-600">Export</a></li>
+                    <li><a href="#contact" class="bg-primary-600 text-white px-6 py-2.5 hover:bg-primary-700 transition-colors font-semibold">Get Quote</a></li>
+                </ul>
+                
+                <button id="mobile-toggle" class="lg:hidden text-stone-900">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 border-t border-stone-200 pt-4">
+                <ul class="flex flex-col gap-3 font-medium">
+                    <li><a href="#home" class="block text-stone-700 hover:text-primary-600 py-2">Home</a></li>
+                    <li><a href="#about" class="block text-stone-700 hover:text-primary-600 py-2">About Us</a></li>
+                    <li><a href="#products" class="block text-stone-700 hover:text-primary-600 py-2">Products</a></li>
+                    <li><a href="#quality" class="block text-stone-700 hover:text-primary-600 py-2">Quality</a></li>
+                    <li><a href="#infrastructure" class="block text-stone-700 hover:text-primary-600 py-2">Infrastructure</a></li>
+                    <li><a href="#export" class="block text-stone-700 hover:text-primary-600 py-2">Export</a></li>
+                    <li><a href="#contact" class="block bg-primary-600 text-white px-6 py-2.5 text-center font-semibold">Get Quote</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative h-screen flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img src="/img/hero2.jpg" 
+                 alt="Premium Indian spices in traditional containers" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl">
+                <div class="inline-block bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 mb-6 animate-fade-in-up">
+                    <span class="text-white text-sm font-semibold tracking-wide uppercase">Established 2010 • Global Exporter</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-6 leading-tight animate-fade-in-up" style="animation-delay: 0.1s;">
+                    Premium Indian Spices<br/>
+                    <span class="text-primary-100">for Global Markets</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-white/95 mb-8 leading-relaxed max-w-2xl animate-fade-in-up" style="animation-delay: 0.2s;">
+                    Direct sourcing from India's finest farms. Export-ready quality with international certifications and reliable logistics to 50+ countries.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <a href="#products" class="bg-primary-600 text-white px-8 py-4 text-center font-bold hover:bg-primary-700 transition-all inline-block">
+                        VIEW PRODUCTS
+                    </a>
+                    <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 py-4 text-center font-bold hover:bg-white hover:text-stone-900 transition-all inline-block">
+                        REQUEST SAMPLES
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stat-counter text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="animate-scale-in">
+                    <div class="text-5xl font-bold mb-2">15+</div>
+                    <div class="text-sm uppercase tracking-wider text-white/80">Years Experience</div>
+                </div>
+                <div class="animate-scale-in" style="animation-delay: 0.1s;">
+                    <div class="text-5xl font-bold mb-2">50+</div>
+                    <div class="text-sm uppercase tracking-wider text-white/80">Countries Served</div>
+                </div>
+                <div class="animate-scale-in" style="animation-delay: 0.2s;">
+                    <div class="text-5xl font-bold mb-2">500+</div>
+                    <div class="text-sm uppercase tracking-wider text-white/80">MT Annual Capacity</div>
+                </div>
+                <div class="animate-scale-in" style="animation-delay: 0.3s;">
+                    <div class="text-5xl font-bold mb-2">100%</div>
+                    <div class="text-sm uppercase tracking-wider text-white/80">Quality Assured</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-stone-50">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="animate-slide-in-left">
+                    <div class="relative pl-6 section-title-line">
+                        <p class="text-primary-600 font-semibold text-sm uppercase tracking-wider mb-3">About Indus Spices</p>
+                        <h2 class="text-4xl md:text-5xl font-display font-bold text-stone-900 mb-6">Leading Exporter of Authentic Indian Spices</h2>
+                    </div>
+                    
+                    <p class="text-lg text-stone-700 mb-6 leading-relaxed">
+                        Indus Spices is a trusted name in the global spice trade, specializing in the export of premium quality Indian spices. With over 15 years of experience, we've built strong partnerships with farmers across India's prime spice-growing regions.
+                    </p>
+                    
+                    <p class="text-lg text-stone-700 mb-8 leading-relaxed">
+                        Our state-of-the-art processing facilities and stringent quality control ensure that every shipment meets international food safety standards. From farm to container, we maintain complete traceability and transparency.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-l-4 border-primary-600 pl-4">
+                            <div class="text-3xl font-bold text-stone-900 mb-1">ISO 9001:2015</div>
+                            <div class="text-sm text-stone-600">Quality Management</div>
+                        </div>
+                        <div class="border-l-4 border-forest-600 pl-4">
+                            <div class="text-3xl font-bold text-stone-900 mb-1">HACCP</div>
+                            <div class="text-sm text-stone-600">Food Safety System</div>
+                        </div>
+                        <div class="border-l-4 border-primary-600 pl-4">
+                            <div class="text-3xl font-bold text-stone-900 mb-1">FSSAI</div>
+                            <div class="text-sm text-stone-600">Licensed & Certified</div>
+                        </div>
+                        <div class="border-l-4 border-forest-600 pl-4">
+                            <div class="text-3xl font-bold text-stone-900 mb-1">APEDA</div>
+                            <div class="text-sm text-stone-600">Registered Exporter</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 animate-slide-in-right">
+                    <div class="space-y-4">
+                        <img src="https://images.unsplash.com/photo-1599909533859-2c69cb471b68?q=80&w=600&auto=format&fit=crop" 
+                             alt="Premium black peppercorns" 
+                             class="w-full h-64 object-cover">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a0b1e542bde9?q=80&w=600&auto=format&fit=crop" 
+                             alt="Assorted Indian spices in bowls" 
+                             class="w-full h-48 object-cover">
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?q=80&w=600&auto=format&fit=crop" 
+                             alt="Turmeric root and powder" 
+                             class="w-full h-48 object-cover">
+                        <img src="https://images.unsplash.com/photo-1599639957043-f3aa5c986398?q=80&w=600&auto=format&fit=crop" 
+                             alt="Red chilli peppers" 
+                             class="w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-primary-600 font-semibold text-sm uppercase tracking-wider mb-3">Our Product Range</p>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-stone-900 mb-6">Export Quality Spices</h2>
+                <p class="text-lg text-stone-600 max-w-3xl mx-auto">
+                    Available in whole, ground, and blended forms. Custom packaging and private labeling options for bulk orders.
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Turmeric -->
+                <div class="product-card bg-white border border-stone-200 overflow-hidden">
+                    <div class="overflow-hidden h-64 bg-gray-200">
+                        <img src="/img/spices/turmeric.png" 
+                             alt="Turmeric - Curcuma longa" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Turmeric</h3>
+                        <p class="text-sm text-stone-600 mb-3">Curcuma longa</p>
+                        <p class="text-sm text-stone-700 leading-relaxed">High curcumin content, available as whole fingers, powder. Sourced from Erode, Salem.</p>
+                        <div class="mt-4 pt-4 border-t border-stone-200">
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Forms: Whole, Powder</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Red Chilli -->
+                <div class="product-card bg-white border border-stone-200 overflow-hidden">
+                    <div class="overflow-hidden h-64 bg-gray-200">
+                        <img src="/img/spices/red-chili.png" 
+                             alt="Red Chilli - Capsicum annuum" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Red Chilli</h3>
+                        <p class="text-sm text-stone-600 mb-3">Capsicum annuum</p>
+                        <p class="text-sm text-stone-700 leading-relaxed">Multiple varieties: Teja, 334, Sannam. Customized heat levels from mild to extra hot.</p>
+                        <div class="mt-4 pt-4 border-t border-stone-200">
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Forms: Whole, Crushed, Powder</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Black Pepper -->
+                <div class="product-card bg-white border border-stone-200 overflow-hidden">
+                    <div class="overflow-hidden h-64 bg-gray-200">
+                        <img src="/img/spices/black-pepper.png" 
+                             alt="Black Pepper - Piper nigrum" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Black Pepper</h3>
+                        <p class="text-sm text-stone-600 mb-3">Piper nigrum</p>
+                        <p class="text-sm text-stone-700 leading-relaxed">Premium Kerala pepper. Bold flavor, high piperine. Density and quality graded.</p>
+                        <div class="mt-4 pt-4 border-t border-stone-200">
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Forms: Whole, Cracked, Powder</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cumin -->
+                <div class="product-card bg-white border border-stone-200 overflow-hidden">
+                    <div class="overflow-hidden h-64 bg-gray-200">
+                        <img src="/img/spices/cumin.png" 
+                             alt="Cumin Seeds - Cuminum cyminum" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Cumin Seeds</h3>
+                        <p class="text-sm text-stone-600 mb-3">Cuminum cyminum</p>
+                        <p class="text-sm text-stone-700 leading-relaxed">Gujarat origin. Machine cleaned, 99.5% purity. Singapore, Europe, Eagle quality.</p>
+                        <div class="mt-4 pt-4 border-t border-stone-200">
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Forms: Whole, Powder</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coriander -->
+                <div class="product-card bg-white border border-stone-200 overflow-hidden">
+                    <div class="overflow-hidden h-64 bg-gray-200">
+                        <img src="/img/spices/coriander.png" 
+                             alt="Coriander Seeds - Coriandrum sativum" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Coriander</h3>
+                        <p class="text-sm text-stone-600 mb-3">Coriandrum sativum</p>
+                        <p class="text-sm text-stone-700 leading-relaxed">Eagle, Scooter, Split quality. Rajasthan, MP sourced. Bold seeds, aromatic.</p>
+                        <div class="mt-4 pt-4 border-t border-stone-200">
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Forms: Whole, Split, Powder</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cardamom -->
+                <div class="product-card bg-white border border-stone-200 overflow-hidden">
+                    <div class="overflow-hidden h-64 bg-gray-200">
+                        <img src="/img/spices/cardamom.png" 
+                             alt="Green Cardamom - Elettaria cardamomum" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Cardamom</h3>
+                        <p class="text-sm text-stone-600 mb-3">Elettaria cardamomum</p>
+                        <p class="text-sm text-stone-700 leading-relaxed">Premium green pods from Western Ghats. Bold, Extra Bold grades available.</p>
+                        <div class="mt-4 pt-4 border-t border-stone-200">
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Forms: Whole Pods, Seeds</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cloves -->
+                <div class="product-card bg-white border border-stone-200 overflow-hidden">
+                    <div class="overflow-hidden h-64 bg-gray-200">
+                        <img src="/img/spices/cloves.png" 
+                             alt="Cloves - Syzygium aromaticum" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Cloves</h3>
+                        <p class="text-sm text-stone-600 mb-3">Syzygium aromaticum</p>
+                        <p class="text-sm text-stone-700 leading-relaxed">Handpicked quality. Kerala, Madagascar origin. Rich in eugenol oil.</p>
+                        <div class="mt-4 pt-4 border-t border-stone-200">
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Forms: Whole, Powder</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fennel -->
+                <div class="product-card bg-white border border-stone-200 overflow-hidden">
+                    <div class="overflow-hidden h-64 bg-gray-200">
+                        <img src="/img/spices/fennel.png" 
+                             alt="Fennel Seeds - Foeniculum vulgare" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Fennel Seeds</h3>
+                        <p class="text-sm text-stone-600 mb-3">Foeniculum vulgare</p>
+                        <p class="text-sm text-stone-700 leading-relaxed">Gujarat, Rajasthan sourced. Sweet aroma, uniform green color.</p>
+                        <div class="mt-4 pt-4 border-t border-stone-200">
+                            <span class="text-xs text-stone-500 uppercase tracking-wide">Forms: Whole, Powder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-stone-600 mb-6">Additional products: Cinnamon, Star Anise, Bay Leaf, Fenugreek, Mustard, Nutmeg, Mace, and custom spice blends</p>
+                <a href="#contact" class="inline-block bg-primary-600 text-white px-8 py-4 font-bold hover:bg-primary-700 transition-colors">
+                    DOWNLOAD PRODUCT CATALOG
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUALITY ASSURANCE -->
+    <section id="quality" class="py-20 bg-stone-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-primary-600 font-semibold text-sm uppercase tracking-wider mb-3">Quality Control</p>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-stone-900 mb-6">Certified Excellence at Every Stage</h2>
+                <p class="text-lg text-stone-600 max-w-3xl mx-auto">
+                    From farm selection to final shipment, our rigorous quality control ensures consistency and safety.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white border border-stone-200 p-8">
+                    <div class="w-16 h-16 bg-primary-50 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-900 mb-4">Laboratory Testing</h3>
+                    <p class="text-stone-700 leading-relaxed mb-4">
+                        In-house and third-party lab testing for microbiological safety, pesticide residues, heavy metals, moisture content, and volatile oil percentage.
+                    </p>
+                    <ul class="space-y-2 text-sm text-stone-600">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-forest-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>E.coli, Salmonella testing</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-forest-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Aflatoxin analysis</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-forest-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Pesticide residue screening</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white border border-stone-200 p-8">
+                    <div class="w-16 h-16 bg-forest-50 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-900 mb-4">Processing Standards</h3>
+                    <p class="text-stone-700 leading-relaxed mb-4">
+                        Modern processing facilities with automated cleaning, sorting, grinding, and metal detection equipment maintaining international food safety protocols.
+                    </p>
+                    <ul class="space-y-2 text-sm text-stone-600">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-forest-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Metal detector screening</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-forest-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Hygienic grinding units</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-forest-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Color sorting technology</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white border border-stone-200 p-8">
+                    <div class="w-16 h-16 bg-primary-50 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-900 mb-4">Traceability</h3>
+                    <p class="text-stone-700 leading-relaxed mb-4">
+                        Complete batch tracking from farm to container. Every shipment includes detailed documentation with harvest dates, processing records, and test certificates.
+                    </p>
+                    <ul class="space-y-2 text-sm text-stone-600">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-forest-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Farm origin documentation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-forest-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Batch-wise QC reports</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-forest-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Processing timeline records</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div class="bg-white border border-stone-200 p-12">
+                <h3 class="text-3xl font-display font-bold text-stone-900 mb-8 text-center">Our Certifications</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="certification-badge text-center">
+                        <div class="w-24 h-24 bg-stone-100 mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="font-bold text-stone-900">ISO 9001:2015</div>
+                        <div class="text-sm text-stone-600">Quality Management</div>
+                    </div>
+                    
+                    <div class="certification-badge text-center">
+                        <div class="w-24 h-24 bg-stone-100 mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-forest-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="font-bold text-stone-900">HACCP</div>
+                        <div class="text-sm text-stone-600">Food Safety</div>
+                    </div>
+                    
+                    <div class="certification-badge text-center">
+                        <div class="w-24 h-24 bg-stone-100 mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="font-bold text-stone-900">FSSAI</div>
+                        <div class="text-sm text-stone-600">Licensed</div>
+                    </div>
+                    
+                    <div class="certification-badge text-center">
+                        <div class="w-24 h-24 bg-stone-100 mx-auto mb-4 flex items-center justify-center">
+                            <svg class="w-12 h-12 text-forest-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="font-bold text-stone-900">APEDA</div>
+                        <div class="text-sm text-stone-600">Registered</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFRASTRUCTURE -->
+    <section id="infrastructure" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-primary-600 font-semibold text-sm uppercase tracking-wider mb-3">Our Facilities</p>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-stone-900 mb-6">Modern Processing Infrastructure</h2>
+                <p class="text-lg text-stone-600 max-w-3xl mx-auto">
+                    State-of-the-art facilities equipped with advanced machinery for cleaning, sorting, grinding, and packaging.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="relative h-96">
+                    <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?q=80&w=800&auto=format&fit=crop" 
+                         alt="Modern spice processing facility" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                        <h3 class="text-white text-2xl font-bold">Processing Units</h3>
+                        <p class="text-white/90 text-sm mt-2">Automated cleaning, sorting, and grinding equipment</p>
+                    </div>
+                </div>
+                
+                <div class="relative h-96">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" 
+                         alt="Quality control laboratory" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                        <h3 class="text-white text-2xl font-bold">QC Laboratory</h3>
+                        <p class="text-white/90 text-sm mt-2">Advanced testing equipment for quality verification</p>
+                    </div>
+                </div>
+                
+                <div class="relative h-96">
+                    <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800&auto=format&fit=crop" 
+                         alt="Spice warehouse storage" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                        <h3 class="text-white text-2xl font-bold">Storage Facilities</h3>
+                        <p class="text-white/90 text-sm mt-2">Temperature-controlled warehouses with 1000+ MT capacity</p>
+                    </div>
+                </div>
+                
+                <div class="relative h-96">
+                    <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=800&auto=format&fit=crop" 
+                         alt="Packaging unit" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                        <h3 class="text-white text-2xl font-bold">Packaging Unit</h3>
+                        <p class="text-white/90 text-sm mt-2">Multi-layer food-safe packaging with nitrogen flushing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPORT MARKETS -->
+    <section id="export" class="py-20 parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2000&auto=format&fit=crop');">
+        <div class="bg-stone-900/90 py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <p class="text-primary-500 font-semibold text-sm uppercase tracking-wider mb-3">Global Presence</p>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6">Export to 50+ Countries</h2>
+                    <p class="text-lg text-white/80 max-w-3xl mx-auto">
+                        Trusted supplier to importers, distributors, food manufacturers, and retailers worldwide.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-6">
+                        <h3 class="text-white text-xl font-bold mb-4">North America</h3>
+                        <ul class="space-y-2 text-white/80 text-sm">
+                            <li>🇺🇸 United States</li>
+                            <li>🇨🇦 Canada</li>
+                            <li>🇲🇽 Mexico</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-6">
+                        <h3 class="text-white text-xl font-bold mb-4">Europe</h3>
+                        <ul class="space-y-2 text-white/80 text-sm">
+                            <li>🇬🇧 United Kingdom</li>
+                            <li>🇩🇪 Germany</li>
+                            <li>🇫🇷 France</li>
+                            <li>🇳🇱 Netherlands</li>
+                            <li>🇮🇹 Italy</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-6">
+                        <h3 class="text-white text-xl font-bold mb-4">Middle East</h3>
+                        <ul class="space-y-2 text-white/80 text-sm">
+                            <li>🇦🇪 UAE</li>
+                            <li>🇸🇦 Saudi Arabia</li>
+                            <li>🇶🇦 Qatar</li>
+                            <li>🇴🇲 Oman</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-6">
+                        <h3 class="text-white text-xl font-bold mb-4">Asia Pacific</h3>
+                        <ul class="space-y-2 text-white/80 text-sm">
+                            <li>🇯🇵 Japan</li>
+                            <li>🇸🇬 Singapore</li>
+                            <li>🇲🇾 Malaysia</li>
+                            <li>🇹🇭 Thailand</li>
+                            <li>🇰🇷 South Korea</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-6">
+                        <h3 class="text-white text-xl font-bold mb-4">Oceania</h3>
+                        <ul class="space-y-2 text-white/80 text-sm">
+                            <li>🇦🇺 Australia</li>
+                            <li>🇳🇿 New Zealand</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white/5 backdrop-blur-sm border border-white/10 p-6">
+                        <h3 class="text-white text-xl font-bold mb-4">Africa</h3>
+                        <ul class="space-y-2 text-white/80 text-sm">
+                            <li>🇿🇦 South Africa</li>
+                            <li>🇰🇪 Kenya</li>
+                            <li>🇪🇬 Egypt</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-sm border border-white/20 p-8 max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-display font-bold text-white mb-4 text-center">Complete Export Services</h3>
+                    <div class="grid md:grid-cols-2 gap-6 text-white/90">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-primary-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <div>
+                                <div class="font-semibold mb-1">Documentation Support</div>
+                                <div class="text-sm text-white/70">Complete export paperwork, certificates, customs clearance</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-primary-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <div>
+                                <div class="font-semibold mb-1">Logistics Coordination</div>
+                                <div class="text-sm text-white/70">FCL/LCL shipments, reliable freight forwarders</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-primary-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <div>
+                                <div class="font-semibold mb-1">Custom Packaging</div>
+                                <div class="text-sm text-white/70">Private label, buyer specifications, retail ready</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-primary-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <div>
+                                <div class="font-semibold mb-1">Competitive Pricing</div>
+                                <div class="text-sm text-white/70">Direct sourcing, bulk discounts, FOB/CIF terms</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-stone-50">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <div class="relative pl-6 section-title-line mb-8">
+                        <p class="text-primary-600 font-semibold text-sm uppercase tracking-wider mb-3">Get In Touch</p>
+                        <h2 class="text-4xl md:text-5xl font-display font-bold text-stone-900 mb-6">Partner With Us</h2>
+                    </div>
+                    
+                    <p class="text-lg text-stone-700 mb-8 leading-relaxed">
+                        Whether you're an importer, wholesaler, or food manufacturer, we're ready to discuss your spice requirements. Request samples, pricing quotations, or product specifications.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary-100 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-bold text-stone-900 mb-1">Email</div>
+                                <a href="mailto:export@indusspices.com" class="text-primary-600 hover:text-primary-700">export@indusspices.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-forest-100 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-forest-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-bold text-stone-900 mb-1">Phone</div>
+                                <a href="tel:+919876543210" class="text-forest-600 hover:text-forest-700">+91 98765 43210</a><br>
+                                <a href="tel:+919876543211" class="text-forest-600 hover:text-forest-700">+91 98765 43211</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary-100 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-bold text-stone-900 mb-1">Address</div>
+                                <div class="text-stone-700">
+                                    Industrial Area, GIDC Estate<br>
+                                    Cochin, Kerala 682030<br>
+                                    India
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-8 border-t border-stone-200">
+                        <div class="font-bold text-stone-900 mb-3">Business Hours</div>
+                        <div class="text-stone-700">
+                            Monday - Saturday: 9:00 AM - 6:00 PM IST<br>
+                            Sunday: Closed
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-stone-200 p-8">
+                    <h3 class="text-2xl font-display font-bold text-stone-900 mb-6">Send Inquiry</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-stone-900 mb-2">Full Name *</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-stone-300 focus:border-primary-600 focus:outline-none">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-stone-900 mb-2">Email Address *</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-stone-300 focus:border-primary-600 focus:outline-none">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-stone-900 mb-2">Phone Number</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-stone-300 focus:border-primary-600 focus:outline-none">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-stone-900 mb-2">Company Name</label>
+                            <input type="text" class="w-full px-4 py-3 border border-stone-300 focus:border-primary-600 focus:outline-none">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-stone-900 mb-2">Country *</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-stone-300 focus:border-primary-600 focus:outline-none">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-stone-900 mb-2">Product Interest</label>
+                            <select class="w-full px-4 py-3 border border-stone-300 focus:border-primary-600 focus:outline-none">
+                                <option>Select Product</option>
+                                <option>Turmeric</option>
+                                <option>Red Chilli</option>
+                                <option>Black Pepper</option>
+                                <option>Cumin Seeds</option>
+                                <option>Coriander</option>
+                                <option>Cardamom</option>
+                                <option>Multiple Products</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-stone-900 mb-2">Message *</label>
+                            <textarea required rows="4" class="w-full px-4 py-3 border border-stone-300 focus:border-primary-600 focus:outline-none" placeholder="Tell us about your requirements, quantity needed, destination port, etc."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary-600 text-white py-4 font-bold hover:bg-primary-700 transition-colors">
+                            SUBMIT INQUIRY
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-white">INDUS SPICES</div>
+                            <div class="text-xs text-stone-500">Since 2010</div>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-relaxed mb-4">
+                        Leading exporter of premium Indian spices with ISO 9001:2015, HACCP, and FSSAI certifications.
+                    </p>
+                    <div class="text-xs text-stone-500">
+                        Registered with APEDA & Spices Board of India
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#about" class="hover:text-primary-500 transition-colors">About Us</a></li>
+                        <li><a href="#products" class="hover:text-primary-500 transition-colors">Products</a></li>
+                        <li><a href="#quality" class="hover:text-primary-500 transition-colors">Quality Assurance</a></li>
+                        <li><a href="#infrastructure" class="hover:text-primary-500 transition-colors">Infrastructure</a></li>
+                        <li><a href="#export" class="hover:text-primary-500 transition-colors">Export Markets</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Products</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#products" class="hover:text-primary-500 transition-colors">Turmeric</a></li>
+                        <li><a href="#products" class="hover:text-primary-500 transition-colors">Red Chilli</a></li>
+                        <li><a href="#products" class="hover:text-primary-500 transition-colors">Black Pepper</a></li>
+                        <li><a href="#products" class="hover:text-primary-500 transition-colors">Cumin Seeds</a></li>
+                        <li><a href="#products" class="hover:text-primary-500 transition-colors">Coriander</a></li>
+                        <li><a href="#products" class="hover:text-primary-500 transition-colors">View All Products</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Contact</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <a href="mailto:export@indusspices.com" class="hover:text-primary-500 transition-colors">export@indusspices.com</a>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <div>
+                                <a href="tel:+919876543210" class="hover:text-primary-500 transition-colors block">+91 98765 43210</a>
+                                <a href="tel:+919876543211" class="hover:text-primary-500 transition-colors block">+91 98765 43211</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Cochin, Kerala, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <div class="text-stone-500">
+                    © 2026 Indus Spices. All rights reserved.
+                </div>
+                <div class="flex items-center gap-6 text-stone-500">
+                    <span>Privacy Policy</span>
+                    <span>Terms & Conditions</span>
+                    <span>Sitemap</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary-600 text-white w-12 h-12 hidden items-center justify-center hover:bg-primary-700 transition-all shadow-lg z-40">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Back to top button
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('hidden');
+                backToTop.classList.add('flex');
+            } else {
+                backToTop.classList.add('hidden');
+                backToTop.classList.remove('flex');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) translateX(0) scale(1)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all animated elements
+        document.querySelectorAll('[class*="animate-"]').forEach(el => {
+            el.style.opacity = '0';
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
